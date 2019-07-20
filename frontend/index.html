@@ -473,6 +473,8 @@
         mounted() {
 
             this.getLanugle();
+
+            //localStorage.setItem('Lock-Wallet', "");
             var dataContent = localStorage.getItem('Lock-Wallet') || "";
             var data = this.GetQueryString("Data") || "";
             if (dataContent === "" && data === "") {
